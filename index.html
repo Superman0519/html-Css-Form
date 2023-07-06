@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
     <table align="center" cellpadding="10">
         <tr> 
       <td> <h2>Login</h2><td>
@@ -21,8 +22,7 @@
     </tr>
     <tr>
         <td>LAST NAME</td>
-        <td><input type="text" name="Last_Name" id="Lname" maxlength="30" /><i class="validation"><span></span><span></span></i>
-        
+        <td><input type="text" name="Last_Name" id="Lnam" maxlength="30" /><i class="validation"><span></span><span></span></i>        
     
         </td>
         </tr>
@@ -37,8 +37,9 @@
         
             </tr>
             <tr>
-            <td><button id="Submit" class="btn btn-block btn-primary">Submit</button></td>
+            <td><button id="Submit" type="button" class="btn btn-block btn-primary">Submit</button></td>
         </tr>
+      </form>
         <script src="script.js"></script>
 </body>
 </html>
